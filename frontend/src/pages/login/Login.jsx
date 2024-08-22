@@ -15,7 +15,7 @@ const Login = () => {
                     </div>
                     <div>
                         <label className="label p-2 ">
-                            <span className="label-text text-base">Passsword</span>
+                            <span className="label-text text-base">Password</span>
                         </label>
                         <input type="password" placeholder='Enter Password' className='w-full input input-bordered h-10'/>
                     </div>
@@ -49,7 +49,7 @@ export default Login;
 //                   </div>
 //                   <div>
 //                       <label className="label p-2 ">
-//                           <span className="label-text text-base">Passsword</span>
+//                           <span className="label-text text-base">Password</span>
 //                       </label>
 //                       <input type="password" placeholder='Enter Password' className='w-full input input-bordered h-10'/>
 //                   </div>

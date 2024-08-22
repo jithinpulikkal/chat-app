@@ -26,13 +26,13 @@ const Signup = () => {
 
                     <div>
                         <label className="label p-2 ">
-                            <span className="label-text text-base">Passsword</span>
+                            <span className="label-text text-base">Password</span>
                         </label>
                         <input type="password" placeholder="Enter Password" className="w-full input input-bordered h-10" />
                     </div>
                     <div>
                         <label className="label p-2 ">
-                            <span className="label-text text-base">Confirm Passsword</span>
+                            <span className="label-text text-base">Confirm Password</span>
                         </label>
                         <input
                             type="password"
@@ -86,13 +86,13 @@ export default Signup;
 
 //                     <div>
 //                         <label className="label p-2 ">
-//                             <span className="label-text text-base">Passsword</span>
+//                             <span className="label-text text-base">Password</span>
 //                         </label>
 //                         <input type="password" placeholder="Enter Password" className="w-full input input-bordered h-10" />
 //                     </div>
 //                     <div>
 //                         <label className="label p-2 ">
-//                             <span className="label-text text-base">Confirm Passsword</span>
+//                             <span className="label-text text-base">Confirm Password</span>
 //                         </label>
 //                         <input
 //                             type="password"
