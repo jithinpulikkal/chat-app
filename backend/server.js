@@ -9,9 +9,10 @@ import userRoutes from "./routes/userRoutes.js";
 import connect from "./db/connect.js";
 
 const app = express();
-const PORT = process.env.PORT || 5000;
 
 dotenv.config();
+
+const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cookieParser());
