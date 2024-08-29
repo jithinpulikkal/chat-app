@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import GenderCheckBox from "./GenderCheckBox";
 import { useState } from "react";
 import useSignup from "../../hooks/useSignup";
+import { toast } from "sonner";
 
 const Signup = () => {
     const [user, setUser] = useState({
@@ -12,8 +13,7 @@ const Signup = () => {
         confirmPassword: "",
     });
 
-    const {loading,signup}= useSignup();
-
+    const { loading, signup } = useSignup();
 
     const handleCheckbox = (gender) => {
         setUser({ ...user, gender });
@@ -21,9 +21,15 @@ const Signup = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (user.password === user.confirmPassword) {
+        if(user){
+
+        // if (user.password !== user.confirmPassword) {
+        //     toast.error("Passwords do not match");
+        // }else{
+
+        // if (user.password === user.confirmPassword) {
             console.log(user);
-            await signup(user)
+            await signup(user);
         }
     };
 
