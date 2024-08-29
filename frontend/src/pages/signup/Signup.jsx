@@ -21,13 +21,12 @@ const Signup = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if(user){
+        if (user) {
+            // if (user.password !== user.confirmPassword) {
+            //     toast.error("Passwords do not match");
+            // }else{
 
-        // if (user.password !== user.confirmPassword) {
-        //     toast.error("Passwords do not match");
-        // }else{
-
-        // if (user.password === user.confirmPassword) {
+            // if (user.password === user.confirmPassword) {
             console.log(user);
             await signup(user);
         }
@@ -96,8 +95,8 @@ const Signup = () => {
                         Already have an account?
                     </Link>
                     <div>
-                        <button type="submit" className="btn btn-block btn-sm mt-2 hover:text-blue-600">
-                            Sign Up
+                        <button type="submit" className="btn btn-block btn-sm mt-2 hover:text-blue-600" disabled={loading}>
+                            {loading ? <span className="loading loading-spinner"></span> : "Sign Up"}
                         </button>
                     </div>
                 </form>

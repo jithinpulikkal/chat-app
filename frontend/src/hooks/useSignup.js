@@ -14,7 +14,9 @@ const useSignup = () => {
         try {
             const res = await fetch("/api/auth/signup", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: { 
+                    "Content-Type": "application/json" 
+                },
                 body: JSON.stringify({ name, username, gender, password, confirmPassword }),
             });
             const data = await res.json();
@@ -25,12 +27,11 @@ const useSignup = () => {
             } else {
                 toast.success("Signup Successfull");
                 setLoading(false);
-                
+
                 //local storage
                 localStorage.setItem("chat-user", JSON.stringify(data));
                 setAuthUser(data);
 
-                //context
             }
         } catch (error) {
             toast.error(error.message);
