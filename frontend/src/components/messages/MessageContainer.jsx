@@ -32,7 +32,7 @@ const NoChatSelected = () => {
             <div className="px-4 text-center sm:text-lg md:text-xl text-gray-200 font-semibold flex flex-col items-center gap-2">
                 <img src={Icon} style={{height:50, marginTop:30}} alt="icon"/>
                 <p>Welcome <span className="text-gray-500">
-                {JSON.parse(localStorage.getItem("chat-user"))?.username}
+                {JSON.parse(localStorage.getItem("chat-user"))?.name}
                     </span> </p>
                 <p>Select a contact to start messaging</p>
                 <img src={Robot} style={{height:250}} alt="robot" />
