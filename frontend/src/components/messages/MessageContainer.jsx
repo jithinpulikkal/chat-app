@@ -2,7 +2,7 @@ import MessageInput from "./MessageInput";
 import Messages from "./Messages";
 import Robot from "../../assets/robot.gif";
 import Icon from "../../assets/lets-chat-logo-transparent.png";
-import useConversation from "../../zustand/useConversatio";
+import useConversation from "../../zustand/useConversation";
 import { useEffect } from "react";
 
 const MessageContainer = () => {
