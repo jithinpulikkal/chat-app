@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { IoSearchSharp } from "react-icons/io5";
 import useConversation from "../../zustand/useConversation";
 import useGetConversations from "../../hooks/useGetConversations";
-import { toast } from "sonner";
 
 const Search = () => {
     const [search, setSearch] = useState("");
@@ -10,7 +8,7 @@ const Search = () => {
     const { conversations } = useGetConversations();
 
     // Filter conversations based on the search input
-    const filteredConversations = conversations.filter(conversation =>
+    const filteredConversations = conversations.filter((conversation) =>
         conversation.name.toLowerCase().includes(search.toLowerCase())
     );
 
@@ -61,19 +59,6 @@ const Search = () => {
 
 export default Search;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // import { useState } from "react";
 // import { IoSearchSharp } from "react-icons/io5";
 // import useConversation from "../../zustand/useConversation";
@@ -119,5 +104,3 @@ export default Search;
 // };
 
 // export default Search;
-
-
