@@ -9,6 +9,10 @@ const Search = () => {
     const { setSelectedConversation } = useConversation();
     const { conversations } = useGetConversations();
 
+    // const filteredConversations = conversations.filter((conversation) =>
+    //     conversation.name.toLowerCase().includes(search.toLowerCase())
+    // );
+
     const filteredConversations = useMemo(() => {
         if (search.length < 1) return [];
         return conversations.filter((conversation) =>
