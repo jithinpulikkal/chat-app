@@ -7,8 +7,9 @@ import messageRoutes from "./routes/messageRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 
 import connect from "./db/connect.js";
+import { app, server } from "./socket/socket.js";
 
-const app = express();
+
 
 dotenv.config();
 
@@ -26,7 +27,7 @@ app.use("/api/users", userRoutes);
 //     res.send("Hello World");
 // });
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
     connect();
     console.log(`Server is running on port ${PORT}`);
 });

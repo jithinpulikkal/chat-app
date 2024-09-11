@@ -18,8 +18,8 @@ export const signup = async (req, res) => {
 
         // https://avatar-placeholder.iran.liara.run/
 
-        const boyAvatar = `https://avatar-placeholder.iran.liara.run/public/boy?username=${name}`;
-        const girlAvatar = `https://avatar-placeholder.iran.liara.run/public/girl?username=${name}`;
+        const boyAvatar = `https://avatar.iran.liara.run/public/boy?username=${name}`;
+        const girlAvatar = `https://avatar.iran.liara.run/public/girl?username=${name}`;
 
         const newUser = new User({
             name,

@@ -3,9 +3,11 @@ import useGetMessages from "../../hooks/useGetMessages";
 import MessageSkeleton from "../skeletons/MessageSkeleton";
 
 import Message from "./Message";
+import useListenMessages from "../../hooks/useListenMessages";
 
 const Messages = () => {
     const { loading, messages } = useGetMessages();
+    useListenMessages();
     console.log("messages:  ", messages);
     const lastMsgRef = useRef();
     useEffect(() => {
